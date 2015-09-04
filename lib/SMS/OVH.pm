@@ -51,11 +51,11 @@ SMS::OVH - Send SMS using OVH API (https://api.ovh.com/)
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -64,9 +64,9 @@ You'll need the OvhApi.pm module provided by OVH at:
 
 https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip
 
-    use Ovh::SMS;
+    use SMS::OVH;
 
-    my $sms = Ovh::SMS->new(
+    my $sms = SMS::OVH->new(
         app_key => 'your-key',
         app_secret => 'your-secret',
         cons_key => 'your-cons-key',
@@ -81,6 +81,9 @@ https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip
 =head1 METHODS
 
 =head2 send
+
+This is the only method. It just tries to complete the API request.
+It takes no arguments, just uses the parameters set when the instance is created.
 
 =cut
 

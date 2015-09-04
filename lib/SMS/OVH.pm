@@ -15,15 +15,19 @@ has [qw( app_key app_secret cons_key serviceName sender )] => (
 );
 
 has 'receivers' => (
-    is  => 'rw',
-    isa => 'ArrayRef'
+    is       => 'rw',
+    isa      => 'ArrayRef',
+    required => 1,
+    lazy     => 1,
+    default  => sub { [] }
 );
 
 has 'message' => (
     isa      => 'Str',
     is       => 'rw',
     required => 1,
-    lazy     => 1
+    lazy     => 1,
+    default  => ''
 );
 
 has '_api' => (
@@ -53,7 +57,6 @@ Version 0.01
 
 our $VERSION = '0.01';
 
-
 =head1 SYNOPSIS
 
 This is just a little module that use OvhApi.pm to send SMS using the french provider API.
@@ -69,7 +72,7 @@ https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip
         cons_key => 'your-cons-key',
         serviceName => 'a-service-name',
         sender => 'a-sender-name',
-        receiver => ['+33123123123'],
+        receivers => ['+33123123123'],
         message => 'This is a test text message.'
     );
 
@@ -181,4 +184,4 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of SMS::OVH
+1;    # End of SMS::OVH

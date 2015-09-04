@@ -7,6 +7,8 @@ You'll need the OvhApi.pm module provided by OVH at:
 
 https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip
 
+This module also depends on Moose (https://metacpan.org/pod/Moose)
+
 INSTALLATION
 
 To install this module, run the following commands:

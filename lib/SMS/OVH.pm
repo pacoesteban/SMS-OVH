@@ -51,11 +51,11 @@ SMS::OVH - Send SMS using OVH API (https://api.ovh.com/)
 
 =head1 VERSION
 
-Version 0.002_01
+Version v0.3.0
 
 =cut
 
-our $VERSION = '0.002_01';
+our $VERSION = 'v0.3.0';
 
 =head1 SYNOPSIS
 
@@ -63,6 +63,10 @@ This is just a little module that use OvhApi.pm to send SMS using the french pro
 You'll need the OvhApi.pm module provided by OVH at:
 
 https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip
+
+OvhApi is not a CPAN modeula (yet), so you'll need to have it installed before install this module.
+
+This module also depends on Moose (https://metacpan.org/pod/Moose)
 
     use SMS::OVH;
 
@@ -113,9 +117,6 @@ Please report any bugs or feature requests to C<bug-sms-ovh at rt.cpan.org>, or 
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=SMS-OVH>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-
-
-
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
@@ -145,13 +146,11 @@ L<http://search.cpan.org/dist/SMS-OVH/>
 
 =back
 
-
-=head1 ACKNOWLEDGEMENTS
-
-
 =head1 LICENSE AND COPYRIGHT
 
 Copyright 2015 Paco Esteban.
+                  and
+               Powerspace Advertising SL <http://powerspace.com/>
 
 This program is distributed under the (Revised) BSD License:
 L<http://www.opensource.org/licenses/BSD-3-Clause>

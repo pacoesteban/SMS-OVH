@@ -7,7 +7,7 @@ You'll need the OvhApi.pm module provided by OVH at:
 
 https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip
 
-Keep in mind that you'll need to have it installed before install this module.
+OvhApi is not a CPAN modeula (yet), so you'll need to have it installed before install this module.
 
 This module also depends on Moose (https://metacpan.org/pod/Moose)
 
@@ -45,6 +45,8 @@ You can also look for information at:
 LICENSE AND COPYRIGHT
 
 Copyright (C) 2015 Paco Esteban
+                      and
+                   Powerspace Advertising SL <http://powerspace.com/>
 
 This program is distributed under the (Revised) BSD License:
 L<http://www.opensource.org/licenses/BSD-3-Clause>

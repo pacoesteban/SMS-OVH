@@ -51,11 +51,11 @@ SMS::OVH - Send SMS using OVH API (https://api.ovh.com/)
 
 =head1 VERSION
 
-Version v0.3.0
+Version 0.03
 
 =cut
 
-our $VERSION = 'v0.3.0';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 

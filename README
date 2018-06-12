@@ -1,3 +1,11 @@
+** This repo has been moved ! **
+
+I might keep pushing to this github repo, but upstream is now:
+
+  https://git.onna.be/SMS-OVH/
+
+----------------------------------------------------------------------------
+
 SMS-OVH
 
 Send SMS using OVH API (https://api.ovh.com/)
@@ -41,6 +49,9 @@ You can also look for information at:
     Search CPAN
         http://search.cpan.org/dist/SMS-OVH/
 
+BUGS
+
+Patches are welcome. Please send them via email to festeban@powerspace.com
 
 LICENSE AND COPYRIGHT
 
